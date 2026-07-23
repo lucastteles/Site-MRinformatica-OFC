@@ -1,0 +1,125 @@
+.cta .quadro {
+  background: var(--cor-azul-linear);
+  justify-content: space-between;
+  padding: 30px 60px 30px 60px;
+  width: 100%;
+  z-index: 2
+}
+
+.cta .quadro {
+  align-items: center;
+  display: flex
+}
+
+.cta .quadro .imagem {
+  align-items: center;
+  border-radius: 10px;
+  display: flex
+}
+
+.cta .quadro .imagem {
+  background-color: var(--cor-branco);
+  height: 100px;
+  justify-content: center;
+  width: 100px
+}
+
+.cta .quadro .imagem img {
+  max-width: 50px;
+  width: 100%
+}
+
+.cta .quadro .texto {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 30px
+}
+
+.cta .quadro .texto h3 {
+  color: var(--cor-branco);
+  font-family: var(--bold);
+  font-size: var(--f4)
+}
+
+.cta .quadro .texto p {
+  color: var(--cor-cinza);
+  margin: 5px 0 0;
+  font-family: var(--light);
+  font-size: var(--f3);
+  line-height: 1.5;
+  max-width: 510px;
+}
+
+.cta .quadro a {
+  align-items: center;
+  background-color: var(--cor-preto);
+  border-radius: 50px;
+  color: var(--cor-branco);
+  display: flex;
+  font-family: var(--semibold);
+  font-size: var(--f3);
+  justify-content: center;
+  margin-left: auto;
+  padding: 10px 30px 10px 10px;
+  transition: all .3s
+}
+
+.cta .quadro a:hover {
+  opacity: 0.8;
+}
+
+.cta .quadro a .icone {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin: 0 10px 0 0;
+  transition: all .3s;
+  width: 40px
+}
+
+.cta .quadro a .icone img {
+  min-width: 30px;
+  width: 30px;
+  transition: all .3s
+}
+
+
+/*Responsivo
+*/
+@media screen and (max-width: 1000px) {
+  .cta .quadro {
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cta .quadro .texto {
+    align-items: center;
+    padding: 20px 0 0;
+    text-align: center;
+  }
+
+  .cta .quadro .texto p {
+    margin: 10px 0 15px;
+  }
+
+  .cta .quadro a {
+    margin-left: 0;
+  }
+
+  .cta .quadro a {
+    padding: 10px 35px 10px 10px;
+    margin: 15px 0 0 0;
+    font-size: var(--f2);
+  }
+
+  .cta .quadro a .icone img {
+    min-width: 25px;
+    width: 25px;
+  }
+}

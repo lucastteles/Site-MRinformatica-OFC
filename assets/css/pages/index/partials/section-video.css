@@ -1,0 +1,229 @@
+section.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 150px 80px;
+    background: var(--cor-preto);
+}
+
+section.video .quadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-escura);
+    border-radius: 20px;
+    position: relative;
+}
+
+section.video .quadro .assistir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    position: absolute;
+    transform: translateX(-200px);
+    z-index: 3;
+}
+
+section.video .quadro .assistir .tamanho {
+    width: 100%;
+    padding-bottom: 156.25%;
+    position: relative;
+}
+
+.icone-pause {
+    display: none;
+}
+
+.btn-play {
+    opacity: 1;
+    transition: .3s;
+}
+
+.tamanho:hover .btn-play {
+    opacity: 1;
+}
+
+.btn-play.pausar {
+    opacity: 0;
+}
+
+.tamanho:hover .btn-play.pausar {
+    opacity: 1;
+}
+
+.btn-play{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+
+    transition:
+        opacity .8s ease,
+        visibility 0s linear .8s;
+}
+
+.btn-play.fade{
+    opacity:.25;
+}
+
+.btn-play.oculto{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+section.video .quadro .assistir .tamanho .btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90px;
+    height: 90px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 32px;
+
+    color: #fff;
+
+    background: var(--cor-azul);
+
+    backdrop-filter: blur(10px);
+
+    transition: .3s;
+}
+
+section.video .quadro .assistir .tamanho .btn-play:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
+section.video .quadro .assistir .tamanho video {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 40px;
+
+    /* Borda com efeito vidro escuro */
+    border: 20px solid rgba(10, 18, 121, 0.048);
+
+    background-color: #ebebeb17;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.233),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    /* border-radius: 40px; */
+}
+
+section.video .quadro .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 80px;
+    transform: translateX(200px);
+    background: linear-gradient(to left, var(--cor-escura), #141414);
+    z-index: 2;
+}
+
+section.video .quadro .texto img {
+    margin: 0px 0 10px 0;
+
+}
+
+section.video .quadro .texto h2 {
+    font-family: var(--semibold);
+    font-size: var(--f5);
+    line-height: 1.2;
+    max-width: 550px;
+    background: var(--cor-branco-linear);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+section.video .quadro .texto p {
+    font-family: var(--light);
+    font-size: var(--f3);
+    color: var(--cor-cinza);
+    line-height: 1.5;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+section.video .quadro span {
+    width: 100%;
+    max-width: 900px;
+    height: calc(100% + 40px);
+    background-color: var(--cor-escura);
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 1000px) {
+    section.video {
+        padding: 210px 30px 60px 30px;
+    }
+
+
+    section.video .quadro {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    section.video .quadro .assistir {
+        width: 320px;
+        top: -160px;
+        transform: none;
+    }
+
+    section.video .quadro .texto {
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(to top, var(--cor-escura), #141414);
+        padding: 350px 20px 30px 20px;
+        border-radius: 15px;
+        transform: none;
+    }
+
+    section.video .quadro .texto h2 {
+        font-size: var(--f5);
+        max-width: 300px;
+    }
+
+    section.video .quadro .texto p {
+        font-size: var(--f2);
+        max-width: 350px;
+    }
+
+    section.video .quadro span {
+        height: 100%;
+        width: calc(100% - 30px);
+        background-color: var(--cor-escura);
+        border-radius: 20px;
+        z-index: 1;
+        position: absolute;
+        top: -80px;
+    }
+}

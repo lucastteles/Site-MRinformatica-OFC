@@ -1,0 +1,44 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição das coisas */
+:root {
+  --cor-branco: #FFFFFF;
+  --cor-preto: #111111;
+  --cor-escura: #1C1C1C;
+
+  --cor-gelo: #F6FAFD;
+
+  --cor-branco-linear: linear-gradient(to right, #FFFFFF, #999999);
+
+  --cor-cinza-branco-linear: linear-gradient(to top, #EDEDED, #FFFFFF);
+
+  --cor-branco-cinza-linear: linear-gradient(to top, #FFFFFF, #EDEDED);
+
+
+  --cor-azul-linear: linear-gradient(to right, #112472, #2044D8);
+
+  --cor-cinza-texto: #CACACA;
+
+  --cor-vermelho: #EB3135;
+  --cor-azul: #5E82FE;
+  --cor-azul-claro: #829DD3;
+
+
+  --cor-verde: #009B3A;
+  --cor-musgo: #38B55B;
+  --cor-laranja: #F3B51A;
+  --cor-cinza: #DEDEDE;
+  ;
+
+
+
+  --light: 'Mont-Light';
+  --semibold: 'Mont-SemiBold';
+  --bold: 'Mont-Bold';
+
+  --f1: clamp(0.6rem, 1vw, 0.8rem);
+  --f2: clamp(0.8rem, 1vw, 1.0rem);
+  --f3: clamp(1.0rem, 1vw, 1.2rem);
+  --f4: clamp(1.2rem, 1vw, 1.5rem);
+  --f5: clamp(1.5rem, 1vw, 2.5rem);
+  --f6: clamp(2rem, 1vw, 3.5rem);
+  --f7: clamp(4.0rem, 1vw, 5.5rem);
+}

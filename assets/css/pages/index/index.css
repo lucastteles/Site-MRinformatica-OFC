@@ -1,0 +1,98 @@
+/* Global */
+@import '../../global/global.css';
+
+/* Partials */
+@import './partials/nav.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-servicos.css';
+@import './partials/section-diferenciais.css';
+@import './partials/section-etapas.css';
+@import './partials/section-cta.css';
+@import './partials/section-marcas.css';
+@import './partials/section-trabalhos.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-duvidas.css';
+@import './partials/section-mapa.css';
+@import './partials/section-produtos-categorias.css';
+@import './partials/section-missao.css';
+@import './partials/section-video.css';
+@import './partials/footer.css';
+
+
+
+
+.whatsapp-float {
+  --size: 72px;
+
+  position: fixed;
+  right: 40px;
+  bottom: 24px;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--cor-musgo);
+  border-radius: 50%;
+  z-index: 9999;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 0 0 8px rgba(45, 191, 90, 0.15),
+    0 0 0 16px rgba(45, 191, 90, 0.08);
+
+  transition: transform .3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-float svg {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Anel interno */
+.whatsapp-float::before,
+.whatsapp-float::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+/* Primeiro círculo pulsante */
+.whatsapp-float::before {
+  background: rgba(45, 191, 90, 0.25);
+  animation: pulse 2s infinite;
+}
+
+/* Segundo círculo pulsante */
+.whatsapp-float::after {
+  background: rgba(45, 191, 90, 0.15);
+  animation: pulse 2s infinite .7s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+
+  70% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}

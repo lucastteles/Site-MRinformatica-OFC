@@ -1,0 +1,22 @@
+/* Fontes */
+@font-face {
+  font-family: 'Mont-Bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/Mont-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Mont-SemiBold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/Mont-SemiBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Mont-Light';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../files/fonts/Mont-Light.woff') format('woff');
+}

@@ -1,0 +1,391 @@
+.navbar {
+  align-items: center;
+  background-color: #45454560;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  left: 0;
+  padding: 10px 60px;
+  position: fixed;
+  top: 0;
+  transition: all .3s;
+  width: 100%;
+  z-index: 10
+}
+
+.navbar.escuro {
+  background-color: var(--cor-azul-escuro);
+  border-bottom: none
+}
+
+.navbar a img.logo {
+  cursor: pointer;
+  min-width: 75px;
+  transition: all .3s;
+  width: 75px
+}
+
+img.logo:hover {
+  opacity: .7
+}
+
+.navbar.escuro .opcao p {
+  color: var(--cor-branco)
+}
+
+.navbar.escuro .opcao p svg {
+  fill: var(--cor-branco)
+}
+
+.navbar.escuro .opcao.ativo {
+  background-color: var(--cor-azul)
+}
+
+.navbar.escuro .opcao.ativo p {
+  color: var(--cor-branco)
+}
+
+.navbar.escuro .opcao.ativo svg {
+  fill: var(--cor-branco)
+}
+
+.opcao,
+.opcoes {
+  align-items: center;
+  display: flex
+}
+
+.opcao {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition: all .3s
+}
+
+.opcao:hover {
+  opacity: .7
+}
+
+.opcao.ativo {
+  background-color: var(--cor-azul);
+  pointer-events: none
+}
+
+.opcao.ativo p {
+  color: var(--cor-azul)
+}
+
+.opcao.ativo svg {
+  fill: var(--cor-azul)
+}
+
+.opcao svg {
+  fill: var(--cor-cinza);
+  margin: 0 0 0 10px;
+  max-height: 8px;
+  min-width: 8px;
+  transition: all .3s;
+  width: 8px
+}
+
+.opcao p {
+  color: var(--cor-cinza);
+  font-family: var(--light);
+  font-size: var(--f1);
+  transition: all .3s
+}
+
+.opcoes a.destaque {
+  display: none
+}
+
+a.destaque {
+  align-items: center;
+  background-color: var(--cor-verde);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 13px 20px;
+  transition: all .3s;
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-family: var(--bold);
+  font-size: var(--f1)
+}
+
+a.destaque:hover {
+  background-color: var(--cor-musgo)
+}
+
+a.destaque svg {
+  fill: var(--cor-branco);
+  margin: 0 8px 0 0;
+  min-width: 12px;
+  width: 12px
+}
+
+.expandir {
+  position: relative
+}
+
+.expandir .balao {
+  align-items: flex-start;
+  background-color: var(--cor-escura);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #0c0d1f20;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-width: 220px;
+  opacity: 0;
+  padding: 13px 17px;
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  transition: all .3s;
+  visibility: hidden;
+  width: 220px
+}
+
+.expandir .balao.areas {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 500px;
+  padding: 20px 20px 10px;
+  width: 500px
+}
+
+.expandir.ativo .balao {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible
+}
+
+.expandir .balao.areas .botao {
+  background-color: #161616;
+  border-radius: 10px;
+  border: 1px solid #829dd356;
+  margin: 0 0 10px;
+  padding: 15px;
+  width: calc(50% - 5px)
+}
+
+.expandir .balao.areas .botao p {
+  color: var(--cor-branco)
+}
+
+.expandir .balao.areas .botao:hover {
+  background-color: var(--cor-azul);
+  opacity: 1
+}
+
+.expandir .balao.areas .botao:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.expandir .balao.areas .botao:hover p {
+  color: var(--cor-branco)
+}
+
+.expandir .balao .botao {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  padding: 8px 0;
+  transition: all .3s
+}
+
+.expandir .balao .botao:hover {
+  opacity: .7
+}
+
+.expandir .balao .botao img {
+  fill: var(--cor-azul);
+  margin: 0 8px 0 0;
+  min-width: 15px;
+  transition: all .3s;
+  width: 15px
+}
+
+.expandir .balao .botao p {
+  color: var(--cor-preto);
+  font-family: var(--light);
+  font-size: var(--f1);
+  transition: all .3s
+}
+
+.navbar.escuro .menu.ativo span {
+  background-color: var(--cor-vermelho)
+}
+
+.navbar.escuro .menu span {
+  background-color: var(--cor-gelo)
+}
+
+.menu {
+  background-color: transparent;
+  display: none;
+  height: 30px;
+  margin: 0 0 0 15px;
+  position: relative;
+  width: 30px
+}
+
+.menu.ativo span {
+  background-color: var(--cor-vermelho)
+}
+
+.menu span {
+  background-color: var(--cor-azul);
+  position: absolute;
+  right: 0;
+  transition: all .3s
+}
+
+.menu.ativo span.um {
+  top: 13px;
+  transform: rotate(45deg)
+}
+
+.menu.ativo span.dois {
+  bottom: 13px;
+  transform: rotate(-45deg);
+  width: 30px
+}
+
+.menu span.um {
+  height: 3px;
+  top: 7px;
+  width: 30px
+}
+
+.menu span.dois {
+  bottom: 7px;
+  height: 3px;
+  width: 20px
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px
+  }
+
+  .navbar a img.logo {
+    cursor: pointer;
+    min-width: 65px;
+    transition: all .3s;
+    width: 65px;
+  }
+
+  .navbar.escuro .opcoes {
+    background-color: var(--cor-azul)
+  }
+
+  .navbar.escuro .expandir .balao .botao p {
+    color: var(--cor-branco)
+  }
+
+  .opcoes {
+    align-items: flex-start;
+    background-color: var(--cor-escura);
+    box-shadow: 0 20px 30px #989de020;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    opacity: 0;
+    padding: 10px 20px 20px 10px;
+    pointer-events: none;
+    position: fixed;
+    top: 50px;
+    transition: all .3s;
+    visibility: hidden;
+    width: 100%
+  }
+
+  .opcoes a.destaque {
+    display: flex;
+    margin: 10px 0 0 10px
+  }
+
+  a.destaque {
+    display: none
+  }
+
+  .opcoes.ativo {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible
+  }
+
+  .opcoes .opcao {
+    margin: 0;
+    padding: 10px
+  }
+
+  .expandir .balao.areas .botao p,
+  .opcao p {
+    font-size: var(--f2);
+  }
+
+
+  .expandir {
+    position: relative
+  }
+
+  .expandir .balao {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: none;
+    left: auto;
+    position: relative;
+    top: auto
+  }
+
+  .expandir .balao,
+  .expandir .balao.areas {
+    min-width: 100%;
+    padding: 0 0 0 10px;
+    width: 100%
+  }
+
+  .expandir .balao.areas {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start
+  }
+
+  .expandir .balao.areas .botao {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 8px 0;
+    width: 100%
+  }
+
+  .expandir .balao.areas .botao:hover {
+    background-color: transparent;
+    opacity: .7
+  }
+
+  .expandir .balao.areas .botao:hover p {
+    color: var(--cor-branco)
+  }
+
+  .expandir.ativo .balao {
+    animation: fadeIn .3s linear;
+    display: flex
+  }
+
+  .menu {
+    display: flex
+  }
+}
+
+
+.expandir.ativo .opcao svg {
+  transform: rotate(180deg);
+}

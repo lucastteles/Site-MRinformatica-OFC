@@ -1,0 +1,361 @@
+/* 
+<section class="depoimentos"> 
+*/
+section.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 60px 60px 60px;
+  background: var(--cor-cinza-branco-linear);
+  overflow: hidden;
+  position: relative;
+}
+
+section.depoimentos.sobre-nos {
+  padding: 120px 60px 60px 60px;
+
+}
+
+section.depoimentos .divisor-MRinformatica.quemsomos {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  transform: rotate(180deg);
+}
+
+section.depoimentos .titulo-avaliacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 40px 0;
+}
+
+section.depoimentos .titulo-avaliacoes .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 6px 18px;
+  margin: 0 0 20px 0;
+  background: #6084fe2b;
+}
+
+section.depoimentos .titulo-avaliacoes .tag h3 {
+  font-family: var(--semibold);
+  font-size: var(--f1);
+  color: #112268;
+  letter-spacing: 1px;
+}
+
+section.depoimentos .titulo-avaliacoes h2 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-preto);
+  line-height: 1.2;
+  max-width: 495px;
+}
+
+section.depoimentos .titulo-avaliacoes .titulo-notebook {
+  max-width: 400px;
+}
+
+section.depoimentos .titulo-avaliacoes .titulo-celular {
+  max-width: 650px;
+}
+
+section.depoimentos .titulo-avaliacoes .titulo-impressora {
+  max-width: 680px;
+}
+
+section.depoimentos .titulo-avaliacoes .titulo-pc {
+  max-width: 680px;
+}
+
+section.depoimentos .titulo-avaliacoes .titulo-nos {
+  max-width: 680px;
+
+}
+
+
+section.depoimentos .titulo-avaliacoes h2 span {
+  color: var(--cor-azul);
+}
+
+section.depoimentos .titulo-avaliacoes p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-preto);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  max-width: 550px;
+}
+
+section.depoimentos .titulo-avaliacoes .descricao-computador {
+  max-width: 500px;
+
+}
+
+section.depoimentos .resumo-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 40px 0;
+  gap: 20px;
+}
+
+section.depoimentos .resumo-google .nota {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+section.depoimentos .resumo-google .nota h3 {
+  font-family: var(--semibold);
+  font-size: var(--f6);
+  color: var(--cor-preto);
+}
+
+section.depoimentos .resumo-google .nota .estrelas-nota {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section.depoimentos .resumo-google .nota .estrelas-nota .estrelas {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+section.depoimentos .resumo-google .nota .estrelas-nota .estrelas img {
+  width: 100%;
+  max-width: 22px;
+}
+
+section.depoimentos .resumo-google .nota .estrelas-nota p {
+  font-family: var(--light);
+  font-size: var(--f1);
+  color: #87878B;
+  margin: 6px 0 0 0;
+}
+
+section.depoimentos .resumo-google a.btn-google {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: solid 1px var(--cor-cinza);
+  border-radius: 50px;
+  padding: 12px 22px;
+  background-color: var(--cor-branco);
+  transition: all 0.3s;
+  text-decoration: none;
+  color: var(--cor-preto);
+
+}
+
+section.depoimentos .resumo-google a.btn-google:hover {
+  opacity: 0.7;
+}
+
+section.depoimentos .resumo-google a.btn-google img {
+  width: 100%;
+  max-width: 20px;
+}
+
+section.depoimentos .resumo-google a.btn-google p {
+  font-family: var(--semibold);
+  font-size: var(--f2);
+}
+
+section.depoimentos .slide-avaliacoes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section.depoimentos .slide-avaliacoes .sombra {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(270deg, #f3f3f3, transparent);
+  z-index: 2;
+}
+
+section.depoimentos .slide-avaliacoes .sombra.dois {
+  right: auto;
+  left: 0;
+  background: linear-gradient(90deg, #f3f3f3, transparent);
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  animation: itens-avaliacoesGoogle 180s linear infinite;
+}
+
+@keyframes itens-avaliacoesGoogle {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-1500px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+  width: 310px;
+  min-width: 310px;
+  background-color: var(--cor-branco);
+  margin: 0 20px 0 0;
+  border-radius: 10px;
+  border: solid 1px var(--cor-cinza);
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .cabecalho-avaliacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .cabecalho-avaliacao .perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .cabecalho-avaliacao .perfil .foto {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .cabecalho-avaliacao .perfil .info h3 {
+  font-family: var(--semibold);
+  font-size: var(--f2);
+  color: var(--cor-preto);
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .cabecalho-avaliacao .perfil .info h4 {
+  font-family: var(--light);
+  font-size: var(--f1);
+  color: #87878B;
+  margin: 4px 0 0 0;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .cabecalho-avaliacao img.icone-google {
+  width: 100%;
+  max-width: 22px;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .estrelas {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 18px 0;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .estrelas img {
+  width: 100%;
+  max-width: 18px;
+}
+
+section.depoimentos .slide-avaliacoes .itens-avaliacoes .item p {
+  font-family: var(--light);
+  font-size: var(--f2);
+  color: var(--cor-preto);
+  line-height: 1.5;
+}
+
+
+/* 
+Responsivo 
+*/
+@media screen and (max-width: 1000px) {
+  section.depoimentos {
+    padding: 60px 0 40px 0;
+  }
+
+  section.depoimentos .titulo-avaliacoes {
+    padding: 0 30px 30px 30px;
+  }
+
+  section.depoimentos.sobre-nos {
+    padding: 60px 0 40px 0;
+  }
+
+  section.depoimentos .titulo-avaliacoes h2 {
+    font-size: var(--f5);
+    max-width: 300px;
+  }
+
+  section.depoimentos .titulo-avaliacoes .titulo-nos {
+    max-width: 400px;
+
+  }
+
+  section.depoimentos .titulo-avaliacoes p {
+    font-size: var(--f2);
+    /* max-width: 250px; */
+  }
+
+  section.depoimentos .resumo-google {
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 0 30px 0;
+  }
+
+  section.depoimentos .resumo-google .nota h3 {
+    font-size: var(--f6);
+  }
+
+  section.depoimentos .resumo-google .nota .estrelas-nota .estrelas img {
+    max-width: 18px;
+  }
+
+  section.depoimentos .slide-avaliacoes .sombra {
+    width: 80px;
+  }
+
+  section.depoimentos .slide-avaliacoes .itens-avaliacoes .item {
+    padding: 20px;
+    width: 270px;
+    min-width: 270px;
+    margin: 0 15px 0 0;
+  }
+
+  section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .estrelas {
+    margin: 14px 0;
+  }
+
+  section.depoimentos .slide-avaliacoes .itens-avaliacoes .item .estrelas img {
+    max-width: 15px;
+  }
+
+  section.depoimentos .slide-avaliacoes .itens-avaliacoes .item p {
+    font-size: var(--f2);
+  }
+}

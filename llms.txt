@@ -1,0 +1,25 @@
+# MR Informática
+
+> Loja física de informática em Jacarepaguá, Zona Oeste do Rio de Janeiro, com mais de 15 anos de atendimento. Atendimento presencial para notebook, computador, celular e impressora, montagem de PC gamer e venda de periféricos. Atendimento sempre presencial, com avaliação inicial gratuita e orçamento sem compromisso.
+
+MR Informática é um negócio local, com loja física própria. Todo atendimento é realizado presencialmente, com o equipamento entregue na loja. Não há suporte remoto.
+
+## Endereço e contato
+- Endereço: Estrada do Tindiba, 1866, Loja 101, Rio de Janeiro - RJ, 22745-002
+- Telefone/WhatsApp: +55 21 97320-6461
+- Horário: Segunda a sexta, 09:00–17:30. Sábado, 09:00–12:30. Fechado aos domingos.
+- Instagram: https://www.instagram.com/_mrinformatica/
+
+## Páginas principais
+- [Página inicial](./index.html): visão geral da loja, atendimentos oferecidos e perguntas frequentes.
+- [Atendimento para Notebook](./atendimento-notebook.html): informações sobre notebooks, atendimento presencial e avaliação inicial.
+- [Atendimento para Computador](./atendimento-computador.html): soluções para computadores desktop e atendimento na loja.
+- [Atendimento para Celular](./atendimento-celular.html): atendimento para smartphones de diversas marcas.
+- [Atendimento para Impressora](./atendimento-impressora.html): atendimento para impressoras jato de tinta e laser.
+- [Montagem de PC Gamer](./montagem-pc-gamer.html): montagem personalizada de computadores gamers conforme o perfil do cliente.
+- [Venda de Periféricos](./venda-perifericos.html): teclados, mouses, headsets, webcams, cabos e memórias.
+- [Quem Somos](./quem-somos.html): história da loja, mais de 15 anos de atendimento em Jacarepaguá.
+
+## Observações importantes
+- Todo atendimento é presencial, na loja física indicada acima. Não há suporte remoto, redefinição de senhas ou acesso remoto a contas online.
+- A avaliação inicial é sempre gratuita, e o orçamento é aprovado pelo cliente antes de qualquer atendimento.
