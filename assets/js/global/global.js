@@ -1,13 +1,15 @@
-(function (){
+(function () {
 
-  // Bloqueando arrasta imagens do site para baixar
+  // Bloqueando arrastar imagens do site para baixar
+  function desativarDragDrop() {
+    document.addEventListener('dragstart', function (evento) {
+      evento.preventDefault();
+    }, false);
 
-  function desativarDragDrop () {
-    document.addEventListener('dragstart', (evento) => evento.preventDefault(), false)
-    document.addEventListener('drop', (evento) => evento.preventDefault(), false)
+    document.addEventListener('drop', function (evento) {
+      evento.preventDefault();
+    }, false);
   }
-
-  desativarDragDrop()
 
   // Disparo de evento de clique no WhatsApp para o Google Tag Manager
   function rastrearCliquesWhatsapp() {
@@ -29,11 +31,15 @@
 
       // Dispara o evento para o Google Tag Manager
       window.dataLayer.push({
-        event: 'whatsapp_click'
+        event: 'whatsapp_click',
+        whatsapp_class: botaoWhatsapp.className
       });
 
       // Log apenas para testes
-      console.log('🚀 whatsapp_click disparado:', botaoWhatsapp);
+      console.log('🚀 whatsapp_click disparado:', {
+        elemento: botaoWhatsapp,
+        classe: botaoWhatsapp.className
+      });
 
     }, false);
   }
