@@ -59,6 +59,11 @@ button {
   text-transform: none;
   overflow: visible;
   cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  text-align: inherit;
+  color: inherit;
 }
 button * {
   pointer-events: none;

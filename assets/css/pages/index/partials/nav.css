@@ -97,11 +97,11 @@ img.logo:hover {
   transition: all .3s
 }
 
-.opcoes a.destaque {
+.opcoes button.destaque {
   display: none
 }
 
-a.destaque {
+button.destaque {
   align-items: center;
   background-color: var(--cor-verde);
   border-radius: 50px;
@@ -305,12 +305,12 @@ a.destaque svg {
     width: 100%
   }
 
-  .opcoes a.destaque {
+  .opcoes button.destaque {
     display: flex;
     margin: 10px 0 0 10px
   }
 
-  a.destaque {
+  button.destaque {
     display: none
   }
 

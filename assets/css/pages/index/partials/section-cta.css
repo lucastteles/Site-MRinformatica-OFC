@@ -51,7 +51,7 @@
   max-width: 510px;
 }
 
-.cta .quadro a {
+.cta .quadro button {
   align-items: center;
   background-color: var(--cor-preto);
   border-radius: 50px;
@@ -65,11 +65,11 @@
   transition: all .3s
 }
 
-.cta .quadro a:hover {
+.cta .quadro button:hover {
   opacity: 0.8;
 }
 
-.cta .quadro a .icone {
+.cta .quadro button .icone {
   align-items: center;
   border-radius: 10px;
   display: flex;
@@ -80,7 +80,7 @@
   width: 40px
 }
 
-.cta .quadro a .icone img {
+.cta .quadro button .icone img {
   min-width: 30px;
   width: 30px;
   transition: all .3s
@@ -108,17 +108,17 @@
     margin: 10px 0 15px;
   }
 
-  .cta .quadro a {
+  .cta .quadro button {
     margin-left: 0;
   }
 
-  .cta .quadro a {
+  .cta .quadro button {
     padding: 10px 35px 10px 10px;
     margin: 15px 0 0 0;
     font-size: var(--f2);
   }
 
-  .cta .quadro a .icone img {
+  .cta .quadro button .icone img {
     min-width: 25px;
     width: 25px;
   }
