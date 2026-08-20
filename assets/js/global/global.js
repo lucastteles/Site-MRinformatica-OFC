@@ -41,4 +41,12 @@
     })
   })
 
+  // Clique no telefone (rastreamento de conversão)
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || []
+      window.dataLayer.push({ 'event': 'phone_click' })
+    })
+  })
+
 }())
