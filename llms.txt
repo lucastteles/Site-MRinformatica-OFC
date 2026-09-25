@@ -1,6 +1,6 @@
 # MR Informática
 
-> Loja física de informática em Jacarepaguá, Zona Oeste do Rio de Janeiro, com mais de 15 anos de atendimento. Atendimento presencial para notebook, computador, celular e impressora, montagem de PC gamer e venda de periféricos. Atendimento sempre presencial, com avaliação inicial gratuita e orçamento sem compromisso.
+> Loja física de informática em Jacarepaguá, Zona Oeste do Rio de Janeiro, com mais de 15 anos de atendimento. Atendimento presencial para notebook, computador, celular e impressora, montagem de PC gamer e venda de periféricos. Atendimento sempre presencial, com avaliação inicial e orçamento sem compromisso.
 
 MR Informática é um negócio local, com loja física própria. Todo atendimento é realizado presencialmente, com o equipamento entregue na loja. Não há suporte remoto.
 
@@ -22,4 +22,4 @@ MR Informática é um negócio local, com loja física própria. Todo atendiment
 
 ## Observações importantes
 - Todo atendimento é presencial, na loja física indicada acima. Não há suporte remoto, redefinição de senhas ou acesso remoto a contas online.
-- A avaliação inicial é sempre gratuita, e o orçamento é aprovado pelo cliente antes de qualquer atendimento.
+- Fazemos uma avaliação inicial, e o orçamento é aprovado pelo cliente antes de qualquer atendimento.
